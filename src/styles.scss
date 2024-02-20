@@ -2,3 +2,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'ngx-toastr/toastr';
+
+@layer base {
+  body {
+    @apply text-neutral-900
+  }
+
+  table {
+    @apply table-fixed w-full
+  }
+  th {
+    @apply bg-blue-500 text-left
+  }
+
+  td, th {
+    @apply px-4 py-2 text-sm
+  }
+}
+
+@layer components {
+  .label {
+    @apply mb-1 text-slate-400 text-sm
+  }
+  .input {
+    @apply rounded-sm text-sm border-transparent bg-slate-700 p-2 outline-none border focus:border-blue-500;
+  }
+
+  .btn {
+    @apply text-sm py-2 px-4 rounded-sm text-white transition-colors disabled:bg-gray-300 disabled:cursor-not-allowed;
+  }
+
+  .error {
+    @apply text-red-500 text-xs mt-2;
+  }
+}
+
+@layer utilities {
+  .btn-green {
+    @apply bg-green-600 hover:bg-green-700
+  }
+  .btn-red {
+    @apply bg-red-600 hover:bg-red-500
+  }
+}
