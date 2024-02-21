@@ -7,8 +7,8 @@ import {
 } from '@angular/forms';
 
 import { Method } from '@core/enums';
-import { CategoryService } from '../../services/category.service';
 import { faEdit, faRemove } from '@fortawesome/free-solid-svg-icons';
+import { CategoryService } from '../../services';
 
 type CategoryControls = { ['title']: AbstractControl };
 type CategoryFormGroup = FormGroup & {

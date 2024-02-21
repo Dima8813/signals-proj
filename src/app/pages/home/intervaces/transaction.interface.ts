@@ -1,4 +1,5 @@
 import { Category } from './category.intrface';
+import { TransactionType } from '../enums';
 
 export interface Transaction {
   id: number;
@@ -7,12 +8,3 @@ export interface Transaction {
   type: TransactionType;
   category: Category | null;
 }
-
-export interface TransactionData {
-  title: string;
-  amount: number;
-  type: TransactionType;
-  category: number;
-}
-
-export type TransactionType = 'income' | 'expense';

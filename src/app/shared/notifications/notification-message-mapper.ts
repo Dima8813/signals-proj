@@ -11,4 +11,6 @@ export const NotificationMessageMapper: NotificationMessageMapperType = {
   [NotificationMessageCodeEnum.CATEGORY_CREATED]: 'Created category',
   [NotificationMessageCodeEnum.CATEGORY_UPDATED]: 'Updated category',
   [NotificationMessageCodeEnum.CATEGORY_DELETED]: 'Deleted category',
+  [NotificationMessageCodeEnum.TRANSACTION_CREATED]: 'Transaction created',
+  [NotificationMessageCodeEnum.TRANSACTION_DELETED]: 'Transaction deleted',
 };

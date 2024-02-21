@@ -1,20 +1,11 @@
 {
   "users": [
     {
-      "name": "Dima",
-      "id": 1
-    },
-    {
       "email": "nixs@srh.care",
       "password": "$2a$10$iCZNyG1/G6IuP4uc0AS5Mu2aV3PzigY8qJZZ4VPg7PW6kKp3oQuSa",
       "id": 2
     }
   ],
-  "categories": [
-    {
-      "title": "awdawd",
-      "id": 1
-    }
-  ],
+  "categories": [],
   "transactions": []
 }
