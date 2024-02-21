@@ -1,0 +1,32 @@
+<table class="w-full shadow rounded overflow-hidden mt-4">
+  <thead class="bg-blue-600 text-white">
+    <tr>
+      <th>#</th>
+      <th>Title</th>
+      <th>Amount</th>
+      <th>Category</th>
+      <th class="text-right">Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let transaction of transactionSig(); let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{ transaction.title | titlecase }}</td>
+      <td
+        [ngClass]="
+          transaction.type === transactionType.INCOME
+            ? 'text-green-500'
+            : 'text-red-500'
+        ">
+        {{ transaction.amount | currency }}
+      </td>
+      <td>{{ transaction.category?.title }}</td>
+      <td class="text-right">
+        <button class="text-red-600" (click)="handleDelete(transaction.id)">
+          <fa-icon [icon]="trashIcon"></fa-icon>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
